@@ -1,0 +1,6 @@
+API:
+    get:
+    https://league-of-legends-champions.onrender.com/App/Champions
+
+Github example:
+    https://github.com/Crooks2k/LoL-Api-Champions
