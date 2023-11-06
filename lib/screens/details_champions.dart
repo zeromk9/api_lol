@@ -50,10 +50,10 @@ class _CustomAppbar extends StatelessWidget {
             style: const TextStyle(fontSize: 18),
           ),
         ),
-/*         background: FadeInImage(
-          placeholder: const AssetImage('assets/no-image.jpg'),
-          image: NetworkImage(champ.fullBackdropImg),
-        ), */
+        background: Image(
+          image: AssetImage(champ.champImage),
+          fit: BoxFit.fill,
+        ),
       ),
     );
   }
@@ -73,11 +73,10 @@ class _InfoChampion extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(20),
-/*             child: FadeInImage(
-              placeholder: const AssetImage('assets/no-image.jpg'),
-              image: NetworkImage(champ.fullPosterImg),
-              height: 200,
-            ), */
+            child: Image(
+              image: AssetImage(champ.champImage),
+              fit: BoxFit.fill,
+            ),
           ),
           const SizedBox(width: 20),
           Expanded(

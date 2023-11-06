@@ -27,6 +27,14 @@ class Champion {
     required this.updatedAt,
   });
 
+  get champImage {
+    // ignore: unnecessary_null_comparison
+    if (champion != null) {
+      return 'assets/champions/$champion.jpg';
+    }
+    return 'assets/img/no-image.jpg';
+  }
+
   factory Champion.fromRawJson(String str) =>
       Champion.fromJson(json.decode(str));
 
