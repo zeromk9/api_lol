@@ -4,3 +4,9 @@ API:
 
 Github example:
     https://github.com/Crooks2k/LoL-Api-Champions
+
+Librerias:
+    import 'package:api_lol/models/models.dart';
+    import 'package:api_lol/providers/providers.dart';
+    import 'package:api_lol/screens/screens.dart';
+    import 'package:api_lol/widgets/widgets.dart';
